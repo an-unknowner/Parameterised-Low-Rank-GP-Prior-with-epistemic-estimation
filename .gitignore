@@ -1,0 +1,6 @@
+# data source and trained model result
+/data/*
+
+# compile docs
+/.idea/
+/__pycache__/
