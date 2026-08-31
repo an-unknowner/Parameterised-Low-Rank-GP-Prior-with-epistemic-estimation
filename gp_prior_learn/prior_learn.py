@@ -394,7 +394,7 @@ class ExactPL(BasePriorLearn):
             zero = torch.zeros((), device=loss_nll.device, dtype=loss_nll.dtype)
             return loss_nll, loss_nll, zero
 
-        loss_kl = self.kl_divergence() / x.shape[0]    # 除以batch_size * len_traj，归一化KL散度
+        loss_kl = self.kl_divergence() / self.args.n_train_traj    # 除以样本总量，归一化KL散度
 
         beta_kl = getattr(self.args, "beta_kl", 1.0)
 
