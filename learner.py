@@ -93,7 +93,7 @@ class Train(utils.ITrainAttrLog):
             weight_decay=args.wd
         )
         self.optim_ker = torch.optim.Adam(
-            list(self.model.ker.parameters()) + list(self.model.phi_rho_param),
+            list(self.model.ker.phi.parameters()) + list(self.model.phi_rho_param),
             lr=args.lr,
             weight_decay=args.wd
         )

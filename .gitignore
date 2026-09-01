@@ -1,5 +1,6 @@
 # data source and trained model result
 /data/*
+/his_data/
 
 # compile docs
 /.idea/
