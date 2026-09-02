@@ -6,3 +6,6 @@
 
 ### 20260901 update
     Delete P (basis function coeffient $\theta$ uncertainty) of kernel from stage 2 ELBO training, add data restore folder. 
+
+### 20260902 update
+    ELBO training only train std of network params
