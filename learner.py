@@ -379,7 +379,7 @@ class Train(utils.ITrainAttrLog):
         else:
             loss, loss_nll, loss_kl = self.model.loss(
                 x_batch, y_batch, use_sampling=use_sampling, include_kl=True,
-                include_mean_guide=True, include_phi_guide=True)
+                include_mean_guide=False, include_phi_guide=False)
         loss.backward()
 
         optimizer.step()
